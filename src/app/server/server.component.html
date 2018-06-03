@@ -2,3 +2,8 @@ This is coming from server component!!!
 <br>
 <!-- 'Server below is literal string' -->
 {{'Server'}} id is {{serverId}} with status {{getServerStatus()}}
+<!-- ng attribute directives..uses [] in attribute directives-->
+<p [ngStyle]="{backgroundColor:getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}">
+    {{'Server'}} id is {{serverId}} with status {{getServerStatus()}}    
+</p>
