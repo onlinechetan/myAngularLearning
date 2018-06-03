@@ -6,3 +6,5 @@ below is inherited from app-server
 <app-server></app-server>
 <br><br>
 <button class="btn btn-primary" [disabled]="!allowNewServer">Add server</button>
+{{allowNewServer}} <!-- string interpolation -->
+<p [innerText]="allowNewServer"></p> <!--property binding-->
