@@ -9,3 +9,7 @@ below is inherited from app-server
 {{allowNewServer}} <!-- string interpolation -->
 <p [innerText]="allowNewServer"></p> <!--property binding-->
 {{serverCreationStatus}}
+
+<input
+type="text" class ="form-control" (input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>
