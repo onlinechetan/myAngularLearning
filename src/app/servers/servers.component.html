@@ -5,6 +5,7 @@ below is inherited from app-server
 <br>
 <app-server></app-server>
 <br><br>
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add server</button>
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click) = onCreateServer()>Add server</button>
 {{allowNewServer}} <!-- string interpolation -->
 <p [innerText]="allowNewServer"></p> <!--property binding-->
+{{serverCreationStatus}}
